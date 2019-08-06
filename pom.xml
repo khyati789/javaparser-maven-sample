@@ -18,6 +18,14 @@
         <!-- Tell Maven to treat all source files as UTF-8 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+         
+        <distributionManagement>
+         <snapshotRepository>
+           <id>snapshots</id>
+           <name>cs83-pc-snapshots</name>
+           <url>http://localhost:8082/artifactory/libs-snapshot-local</url>
+         </snapshotRepository>
+        </distributionManagement>     
 
     <dependencies>
         <!-- Here are all your dependencies. Currently only one. These are automatically downloaded from https://mvnrepository.com/ -->
